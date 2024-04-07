@@ -1,35 +1,22 @@
 #import libraries here
 
 def main():
-  year = int(input("Enter the year [ex. 2021]: "))
+  length = float(input("Enter the wavelength in nm: "))
 
-  if year < 0:
-      print("Invalid year!")
+  if length <= 750 and length >= 620:
+     print("The relevant color is Red")
+  elif length <= 750 and length >= 590:
+     print("The relevant color is Orange")
+  elif length <= 750 and length >= 570:
+     print("The relevant color is Yellow")
+  elif length <= 750 and length >= 495:
+     print("The relevant color is Green")
+  elif length <= 750 and length >= 450:
+     print("The relevant color is Blue")
+  elif length <= 750 and length >= 380:
+     print("The relevant color is Violet")
   else:
-      if (year - 2000) % 12 == 0:
-          print(f"{year} is the year of the Dragon")
-      elif (year - 2000) % 12 == 1:
-          print(f"{year} is the year of the Snake")
-      elif (year - 2000) % 12 == 2:
-          print(f"{year} is the year of the Horse")
-      elif (year - 2000) % 12 == 3:
-          print(f"{year} is the year of the Sheep")
-      elif (year - 2000) % 12 == 4:
-          print(f"{year} is the year of the Monkey")
-      elif (year - 2000) % 12 == 5:
-          print(f"{year} is the year of the Rooster")
-      elif (year - 2000) % 12 == 6:
-          print(f"{year} is the year of the Dog")
-      elif (year - 2000) % 12 == 7:
-          print(f"{year} is the year of the Pig")
-      elif (year - 2000) % 12 == 8:
-          print(f"{year} is the year of the Rat")
-      elif (year - 2000) % 12 == 9:
-          print(f"{year} is the year of the Ox")
-      elif (year - 2000) % 12 == 10:
-          print(f"{year} is the year of the Tiger")
-      else:
-          print(f"{year} is the year of the Hare")
+     print("Invalid input!")
   pass
 if __name__ == "__main__":
   main()
