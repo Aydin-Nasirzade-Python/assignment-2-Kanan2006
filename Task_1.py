@@ -9,6 +9,5 @@ def main():
   else:
     print("Entered alphabet is a consonant!")
   pass
-
 if __name__ == "__main__":
   main()
