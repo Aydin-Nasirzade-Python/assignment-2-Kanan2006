@@ -1,7 +1,7 @@
 #import libraries here
 
 def main():
-year = int(input("Enter the year [ex. 2021]: "))
+  year = int(input("Enter the year [ex. 2021]: "))
 
   if year < 0:
       print("Invalid year!")
