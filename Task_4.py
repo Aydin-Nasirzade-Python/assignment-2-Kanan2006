@@ -1,36 +1,35 @@
 #import libraries here
 
 def main():
-   year = int(input("Enter the year [ex. 2021]: "))
-    burcheyvani = ""
-    if year % 12 == 0:
-             burcheyvani = "Monkey"
-    elif year % 12 == 1:
-             burcheyvani = "Rooster"
-    elif year % 12 == 2:
-             burcheyvani = "Dog"
-    elif year % 12 == 3:
-             burcheyvani = "Pig"
-    elif year % 12 == 4:
-             burcheyvani = "Rat"
-    elif year % 12 == 5:
-             burcheyvani = "Ox"
-    elif year % 12 == 6:
-             burcheyvani = "Tiger"
-    elif year % 12 == 7:
-             burcheyvani = "Hare"
-    elif year % 12 == 8:
-             burcheyvani = "Dragon"
-    elif year % 12 == 9:
-             burcheyvani = "Snake"
-    elif year % 12 == 10:
-             burcheyvani = "Horse"
-    elif year % 12 == 11:
-             burcheyvani = "Sheep"
-    if year >= 0:
-        print("%d is the year of the %s" %(year, animal))
-    else:
-        print("Invalid year!")
+year = int(input("Enter the year [ex. 2021]: "))
+
+  if year < 0:
+      print("Invalid year!")
+  else:
+      if (year - 2000) % 12 == 0:
+          print(f"{year} is the year of the Dragon")
+      elif (year - 2000) % 12 == 1:
+          print(f"{year} is the year of the Snake")
+      elif (year - 2000) % 12 == 2:
+          print(f"{year} is the year of the Horse")
+      elif (year - 2000) % 12 == 3:
+          print(f"{year} is the year of the Sheep")
+      elif (year - 2000) % 12 == 4:
+          print(f"{year} is the year of the Monkey")
+      elif (year - 2000) % 12 == 5:
+          print(f"{year} is the year of the Rooster")
+      elif (year - 2000) % 12 == 6:
+          print(f"{year} is the year of the Dog")
+      elif (year - 2000) % 12 == 7:
+          print(f"{year} is the year of the Pig")
+      elif (year - 2000) % 12 == 8:
+          print(f"{year} is the year of the Rat")
+      elif (year - 2000) % 12 == 9:
+          print(f"{year} is the year of the Ox")
+      elif (year - 2000) % 12 == 10:
+          print(f"{year} is the year of the Tiger")
+      else:
+          print(f"{year} is the year of the Hare")
   pass
 
 if __name__ == "__main__":
